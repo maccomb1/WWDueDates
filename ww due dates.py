@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Oct 17 21:00:20 2015
-
 @author: maccomb1
 """
 
@@ -10,8 +8,8 @@ import time
 import csv
 
 
-inFile = '132 ww due.csv'
-entry = [] #will contain the data from the csv file as a list of lists
+inFile = '132 ww due.csv' ##Edit this for each file
+entry = [] 
 with open(inFile, 'r') as f:
     reader = csv.reader(f)
     #Add each row in the csv file as a list
@@ -40,7 +38,5 @@ for i in range(0,len(entry)):
         pyautogui.press('tab')
       
 #on new row
-
-############ all other lines
 
 
